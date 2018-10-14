@@ -35,11 +35,11 @@ public class HelloController {
             System.out.println("services " + s);
             List<ServiceInstance> serviceInstances =  discoveryClient.getInstances(s);
             for(ServiceInstance si : serviceInstances){
-                System.out.println("    services:" + s + ":getHost()=" + si.getHost());
-                System.out.println("    services:" + s + ":getPort()=" + si.getPort());
-                System.out.println("    services:" + s + ":getServiceId()=" + si.getServiceId());
-                System.out.println("    services:" + s + ":getUri()=" + si.getUri());
-                System.out.println("    services:" + s + ":getMetadata()=" + si.getMetadata());
+                System.out.println("services:" + s + ":getHost()=" + si.getHost());
+                System.out.println("services:" + s + ":getPort()=" + si.getPort());
+                System.out.println("services:" + s + ":getServiceId()=" + si.getServiceId());
+                System.out.println("services:" + s + ":getUri()=" + si.getUri());
+                System.out.println("services:" + s + ":getMetadata()=" + si.getMetadata());
             }
 
         }
