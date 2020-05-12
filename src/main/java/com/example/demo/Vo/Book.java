@@ -13,5 +13,4 @@ public class Book {
 
     @Value("${book.desc}")
     private String desc;
-
 }
