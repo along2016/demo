@@ -23,7 +23,7 @@ public class HelloController {
     @RequestMapping("/registered")
     public String getRegistered(){
         List<ServiceInstance> list = discoveryClient.getInstances("STORES");
-        System.out.println(discoveryClient.getLocalServiceInstance());
+//        System.out.println(discoveryClient.getLocalServiceInstance());
         System.out.println("discoveryClient.getServices().size() = " + discoveryClient.getServices().size());
 
         for( String s :  discoveryClient.getServices()){
