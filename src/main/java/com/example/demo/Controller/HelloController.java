@@ -12,8 +12,9 @@ import java.util.List;
 @RestController
 public class HelloController {
 
+    /**  服务注册 */
     @Autowired
-    private DiscoveryClient discoveryClient; // 服务注册
+    private DiscoveryClient discoveryClient;
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String index(){
